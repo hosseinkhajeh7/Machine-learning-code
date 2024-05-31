@@ -372,7 +372,7 @@ plot(test$price, pred_bagging, main = 'Bagging',
      xlab = "Actual", ylab = "Prediction",cex.lab=1.5, cex.main=2.5)
 abline(a = 0, b = 1, col = "red", lwd = 2)
 
-###Model 6 (SVM)-----
+###Model 8 (SVM)-----
 svm_model <- svm(T_price~.-price, data = train, kernel = "radial", cost = 1, gamma = 0.1)
 
 
